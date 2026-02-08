@@ -21,6 +21,7 @@ services:
     volumes:
       - ./assets/saves:/app/assets/saves
       - ./logs:/app/logs
+    network_mode: "host"
   # 前端服务
   frontend:
     build:
